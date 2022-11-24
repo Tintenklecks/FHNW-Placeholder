@@ -12,6 +12,9 @@
 		AA59B28E292E5795003804D7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59B28D292E5795003804D7 /* Extensions.swift */; };
 		AA59B291292E5C08003804D7 /* PlaceholderAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59B290292E5C08003804D7 /* PlaceholderAPI.swift */; };
 		AA59B293292E60B7003804D7 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59B292292E60B7003804D7 /* AppState.swift */; };
+		AA59B297292F6730003804D7 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59B296292F6730003804D7 /* TodoView.swift */; };
+		AA59B299292F6741003804D7 /* Todo.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59B298292F6741003804D7 /* Todo.ViewModel.swift */; };
+		AA59B29B292F6774003804D7 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59B29A292F6774003804D7 /* ToDo.swift */; };
 		AACF4DC1292ABC2A00B7AC8B /* PlaceholderAPISampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACF4DC0292ABC2A00B7AC8B /* PlaceholderAPISampleApp.swift */; };
 		AACF4DC3292ABC2A00B7AC8B /* User.View.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACF4DC2292ABC2A00B7AC8B /* User.View.swift */; };
 		AACF4DC5292ABC2C00B7AC8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AACF4DC4292ABC2C00B7AC8B /* Assets.xcassets */; };
@@ -27,6 +30,9 @@
 		AA59B28D292E5795003804D7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AA59B290292E5C08003804D7 /* PlaceholderAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderAPI.swift; sourceTree = "<group>"; };
 		AA59B292292E60B7003804D7 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		AA59B296292F6730003804D7 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
+		AA59B298292F6741003804D7 /* Todo.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.ViewModel.swift; sourceTree = "<group>"; };
+		AA59B29A292F6774003804D7 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		AACF4DBD292ABC2A00B7AC8B /* PlaceholderAPISample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaceholderAPISample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AACF4DC0292ABC2A00B7AC8B /* PlaceholderAPISampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderAPISampleApp.swift; sourceTree = "<group>"; };
 		AACF4DC2292ABC2A00B7AC8B /* User.View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.View.swift; sourceTree = "<group>"; };
@@ -74,6 +80,16 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
+		AA59B295292F6715003804D7 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				AA59B296292F6730003804D7 /* TodoView.swift */,
+				AA59B298292F6741003804D7 /* Todo.ViewModel.swift */,
+				AA59B29A292F6774003804D7 /* ToDo.swift */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
 		AACF4DB4292ABC2900B7AC8B = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +112,7 @@
 				AACF4DC0292ABC2A00B7AC8B /* PlaceholderAPISampleApp.swift */,
 				AA59B292292E60B7003804D7 /* AppState.swift */,
 				AA59B288292E54F5003804D7 /* User */,
+				AA59B295292F6715003804D7 /* Todo */,
 				AA59B28F292E5BE8003804D7 /* Services */,
 				AA59B294292F6630003804D7 /* Domain */,
 				AA59B28B292E573E003804D7 /* Decodable Structures.swift */,
@@ -194,7 +211,10 @@
 				AA59B28A292E5513003804D7 /* Protocols.swift in Sources */,
 				AACF4DC1292ABC2A00B7AC8B /* PlaceholderAPISampleApp.swift in Sources */,
 				AA59B291292E5C08003804D7 /* PlaceholderAPI.swift in Sources */,
+				AA59B297292F6730003804D7 /* TodoView.swift in Sources */,
 				AA59B28C292E573E003804D7 /* Decodable Structures.swift in Sources */,
+				AA59B29B292F6774003804D7 /* ToDo.swift in Sources */,
+				AA59B299292F6741003804D7 /* Todo.ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
