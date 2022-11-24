@@ -37,7 +37,11 @@ typealias Comments = [Comment]
 
 // MARK: - Album
 
-struct Album: Codable {}
+struct Album: Codable {
+    var userId: Int
+    var id: Int
+    var title: String
+}
 
 typealias Albums = [Album]
 
