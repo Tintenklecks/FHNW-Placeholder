@@ -9,8 +9,18 @@ import Foundation
 
 extension TodoView {
     class ViewModel: ViewModelProtocol {
+        
+        
+        
         func update() {
-            //
+            let model = Model()
+            model.fetch {
+                // success
+               // füllen  model.todos
+            } onError: { errorString in
+                print(errorString)
+            }
+
         }
         
         
