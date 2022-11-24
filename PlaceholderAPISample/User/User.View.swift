@@ -13,10 +13,10 @@ struct UserView: View {
     @StateObject var viewModel = ViewModel()
     
     var body: some View {
-            VStack {
-                Text("User List").font(.largeTitle)
-                Divider()
-                ScrollView {
+        VStack {
+            Text("User List").font(.largeTitle)
+            Divider()
+            ScrollView {
                 ForEach(viewModel.users) {
                     user in
                     UserCard(user: user)
@@ -42,20 +42,27 @@ struct UserView: View {
                     Divider()
                 }
                 Spacer()
-                Button("i", action: {}).padding(8).border(Color.green)
-                Button("i", action: {}).padding(8).border(Color.green)
-                Button("i", action: {}).padding(8).border(Color.green)
-                Button("i", action: {}).padding(8).border(Color.green)
-
+                Button {
+                    print("button clicked")
+                } label: { Label("", systemImage: "info.circle")}
+                Button {
+                    print("button clicked")
+                } label: { Label("", systemImage: "info.circle")}
+                Button {
+                    print("button clicked")
+                } label: { Label("", systemImage: "info.circle")}
+                Button {
+                    print("button clicked")
+                } label: { Label("", systemImage: "info.circle")}
             }
         }
-    }
-    
-    // MARK: - ContentView_Previews
-    
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            UserView()
+        
+        // MARK: - ContentView_Previews
+        
+        struct ContentView_Previews: PreviewProvider {
+            static var previews: some View {
+                UserView()
+            }
         }
     }
 }
