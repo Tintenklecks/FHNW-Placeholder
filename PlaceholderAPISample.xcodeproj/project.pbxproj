@@ -62,9 +62,16 @@
 			isa = PBXGroup;
 			children = (
 				AACF4DCE292ABC5F00B7AC8B /* NetworkService.swift */,
-				AA59B290292E5C08003804D7 /* PlaceholderAPI.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		AA59B294292F6630003804D7 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				AA59B290292E5C08003804D7 /* PlaceholderAPI.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 		AACF4DB4292ABC2900B7AC8B = {
@@ -90,6 +97,7 @@
 				AA59B292292E60B7003804D7 /* AppState.swift */,
 				AA59B288292E54F5003804D7 /* User */,
 				AA59B28F292E5BE8003804D7 /* Services */,
+				AA59B294292F6630003804D7 /* Domain */,
 				AA59B28B292E573E003804D7 /* Decodable Structures.swift */,
 				AA59B289292E5513003804D7 /* Protocols.swift */,
 				AA59B28D292E5795003804D7 /* Extensions.swift */,
