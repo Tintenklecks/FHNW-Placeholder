@@ -34,4 +34,10 @@ extension PlaceholderEndpoints { // API URLs
         let url = self.url
         return url.appending(path: "/\(id)")
     }
+    
+    func url(property: String, id: Int) -> URL {
+        let url = self.url
+        let userIdKey = URLQueryItem(name: property, value: String(id))
+        return url.appending(queryItems: [userIdKey])
+    }
 }
