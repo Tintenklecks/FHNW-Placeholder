@@ -12,7 +12,14 @@ struct PostsView: View {
     var body: some View {
         VStack{
             ForEach(viewModel.posts) { post in
-                Text(post.title).padding(.vertical, 1.0)
+                HStack{
+                    Text(post.title)
+                    Spacer()
+                    Button("Comments"){
+                        
+                    }
+                }.bold()
+                Text(post.body).padding(.bottom, 3.0)
             }
         }.onAppear{
             viewModel.update()
