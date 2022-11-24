@@ -101,7 +101,7 @@ typealias Albums = [Album]
 
 // MARK: - Photo
 
-struct Photo: Codable {
+struct Photo: Codable, Identifiable {
     var albumId: Int
     var id: Int
     var title: String
