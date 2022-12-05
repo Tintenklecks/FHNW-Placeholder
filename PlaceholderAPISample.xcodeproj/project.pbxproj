@@ -10,6 +10,9 @@
 		793D4128292FB6FD000F392E /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793D4127292FB6FD000F392E /* PostsView.swift */; };
 		793D412A292FB711000F392E /* PostsView.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793D4129292FB711000F392E /* PostsView.ViewModel.swift */; };
 		793D412C292FB767000F392E /* PostsView.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793D412B292FB767000F392E /* PostsView.Model.swift */; };
+		79BA1C05293E301700E08725 /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA1C04293E301700E08725 /* CommentsView.swift */; };
+		79BA1C07293E304600E08725 /* CommentsView.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA1C06293E304600E08725 /* CommentsView.ViewModel.swift */; };
+		79BA1C09293E306F00E08725 /* CommentsView.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA1C08293E306F00E08725 /* CommentsView.Model.swift */; };
 		AA59B28A292E5513003804D7 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59B289292E5513003804D7 /* Protocols.swift */; };
 		AA59B28C292E573E003804D7 /* Decodable Structures.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59B28B292E573E003804D7 /* Decodable Structures.swift */; };
 		AA59B28E292E5795003804D7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59B28D292E5795003804D7 /* Extensions.swift */; };
@@ -31,6 +34,9 @@
 		793D4127292FB6FD000F392E /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
 		793D4129292FB711000F392E /* PostsView.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.ViewModel.swift; sourceTree = "<group>"; };
 		793D412B292FB767000F392E /* PostsView.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.Model.swift; sourceTree = "<group>"; };
+		79BA1C04293E301700E08725 /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
+		79BA1C06293E304600E08725 /* CommentsView.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.ViewModel.swift; sourceTree = "<group>"; };
+		79BA1C08293E306F00E08725 /* CommentsView.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.Model.swift; sourceTree = "<group>"; };
 		AA59B289292E5513003804D7 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		AA59B28B292E573E003804D7 /* Decodable Structures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable Structures.swift"; sourceTree = "<group>"; };
 		AA59B28D292E5795003804D7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -63,11 +69,22 @@
 		793D4126292FB6C9000F392E /* Posts */ = {
 			isa = PBXGroup;
 			children = (
+				79BA1C03293E2FFC00E08725 /* Comments */,
 				793D4127292FB6FD000F392E /* PostsView.swift */,
 				793D4129292FB711000F392E /* PostsView.ViewModel.swift */,
 				793D412B292FB767000F392E /* PostsView.Model.swift */,
 			);
 			path = Posts;
+			sourceTree = "<group>";
+		};
+		79BA1C03293E2FFC00E08725 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				79BA1C04293E301700E08725 /* CommentsView.swift */,
+				79BA1C06293E304600E08725 /* CommentsView.ViewModel.swift */,
+				79BA1C08293E306F00E08725 /* CommentsView.Model.swift */,
+			);
+			path = Comments;
 			sourceTree = "<group>";
 		};
 		AA59B288292E54F5003804D7 /* User */ = {
@@ -225,11 +242,14 @@
 				793D412C292FB767000F392E /* PostsView.Model.swift in Sources */,
 				AA59B293292E60B7003804D7 /* AppState.swift in Sources */,
 				AACF4DC3292ABC2A00B7AC8B /* User.View.swift in Sources */,
+				79BA1C09293E306F00E08725 /* CommentsView.Model.swift in Sources */,
 				AACF4DCF292ABC5F00B7AC8B /* NetworkService.swift in Sources */,
 				AA59B28E292E5795003804D7 /* Extensions.swift in Sources */,
+				79BA1C05293E301700E08725 /* CommentsView.swift in Sources */,
 				AACF4DD1292BE68E00B7AC8B /* User.ViewModel.swift in Sources */,
 				AA59B28A292E5513003804D7 /* Protocols.swift in Sources */,
 				AACF4DC1292ABC2A00B7AC8B /* PlaceholderAPISampleApp.swift in Sources */,
+				79BA1C07293E304600E08725 /* CommentsView.ViewModel.swift in Sources */,
 				AA59B291292E5C08003804D7 /* PlaceholderAPI.swift in Sources */,
 				AA59B297292F6730003804D7 /* TodoView.swift in Sources */,
 				AA59B28C292E573E003804D7 /* Decodable Structures.swift in Sources */,

@@ -93,7 +93,13 @@ typealias Posts = [Post]
 
 // MARK: - Comment
 
-struct Comment: Codable {}
+struct Comment: Codable, Identifiable {
+    var postId: Int
+    var id: Int
+    var name: String
+    var email: String
+    var body: String
+}
 
 typealias Comments = [Comment]
 
