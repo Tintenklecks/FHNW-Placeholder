@@ -10,31 +10,18 @@ import SwiftUI
 struct PostsView: View {
     let userId: Int
     @StateObject var viewModel = ViewModel()
-    @State var showComments = false
+    @State private var showComments = false
     var body: some View {
-        GeometryReader { reader in
+        ScrollView{
             VStack{
                 ForEach(viewModel.posts) { post in
-                    HStack{
-                        Text(post.title)
-                        Spacer()
-                        Button("Comments"){
-                            showComments = !showComments
-                        }
-                    }.bold()
-                    Text(post.body).frame(
-                        maxWidth: .infinity,
-                        maxHeight: .infinity,
-                        alignment: .leading
-                    ).padding(.bottom, 3.0)
-                    if showComments {
-                        CommentsView(postId: post.id).frame(
-                            width: CGFloat(reader.size.width * 0.8),
-                            alignment: .trailing
-                        )
-                    }
-                }
-            }.onAppear{
+                    PostView(post: post)
+                        
+                }.padding()
+            }
+            
+            
+            .onAppear{
                 viewModel.update(userId: userId)
             }
         }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A2FD76F29422AEA0052ADDB /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2FD76E29422AEA0052ADDB /* PostView.swift */; };
 		793D4128292FB6FD000F392E /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793D4127292FB6FD000F392E /* PostsView.swift */; };
 		793D412A292FB711000F392E /* PostsView.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793D4129292FB711000F392E /* PostsView.ViewModel.swift */; };
 		793D412C292FB767000F392E /* PostsView.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793D412B292FB767000F392E /* PostsView.Model.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A2FD76E29422AEA0052ADDB /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		793D4127292FB6FD000F392E /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
 		793D4129292FB711000F392E /* PostsView.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.ViewModel.swift; sourceTree = "<group>"; };
 		793D412B292FB767000F392E /* PostsView.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.Model.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			children = (
 				79BA1C03293E2FFC00E08725 /* Comments */,
 				793D4127292FB6FD000F392E /* PostsView.swift */,
+				1A2FD76E29422AEA0052ADDB /* PostView.swift */,
 				793D4129292FB711000F392E /* PostsView.ViewModel.swift */,
 				793D412B292FB767000F392E /* PostsView.Model.swift */,
 			);
@@ -254,6 +257,7 @@
 				AA59B297292F6730003804D7 /* TodoView.swift in Sources */,
 				AA59B28C292E573E003804D7 /* Decodable Structures.swift in Sources */,
 				AA59B29B292F6774003804D7 /* ToDo.Model.swift in Sources */,
+				1A2FD76F29422AEA0052ADDB /* PostView.swift in Sources */,
 				AA59B299292F6741003804D7 /* Todo.ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
